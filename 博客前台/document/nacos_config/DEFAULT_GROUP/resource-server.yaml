@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/resource?serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  mail:
+    host: smtp.qq.com
+    username: 2782684491@qq.com
+    password: npcrdxldqkpfdfie
+    port: 587
+
+minio:
+  url: http://127.0.0.1:59000
+  username: root
+  password: root
+
+resource:
+  path:
+    avatar-bucket: avatar
+    image-bucket: image
+    image-url-base: http://image.scblogs.cn/
+
+#qiniu:
+#  access-key: xxxx
+#  secret-key: xxxx
+#  prefix-url: xxxx

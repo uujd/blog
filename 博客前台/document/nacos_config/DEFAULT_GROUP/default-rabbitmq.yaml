@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1 # 主机名
+    port: 5672 # 端口
+    virtual-host: scblogs # 虚拟主机
+    username: guest # 用户名
+    password: guest # 密码
+    listener:
+      simple:
+        prefetch: 1 # 每次只能获取一条消息，处理完成才能获取下一个消息
