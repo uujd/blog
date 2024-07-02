@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for weblog-springboot" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.28/lombok-1.18.28.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="weblog-web" />
+        <module name="weblog-module-common" />
+        <module name="weblog-module-jwt" />
+        <module name="weblog-module-admin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="weblog-module-admin" target="1.8" />
+      <module name="weblog-module-common" target="1.8" />
+      <module name="weblog-module-jwt" target="1.8" />
+      <module name="weblog-springboot" target="1.8" />
+      <module name="weblog-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="weblog-module-admin" options="-parameters" />
+      <module name="weblog-module-common" options="-parameters" />
+      <module name="weblog-module-jwt" options="-parameters" />
+      <module name="weblog-web" options="-parameters" />
+    </option>
+  </component>
+</project>
